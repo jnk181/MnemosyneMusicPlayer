@@ -1,0 +1,7 @@
+- CD player view
+    - Spinning the CD or vinyl through the touch screen will seek the track
+- Vinyl view
+- Only mp3 and flac files are scanned, should we allow other file types?
+- User setting for changing music scan directory (only one can be used)
+- User setting for changing Now Playing layouts -> Classic, CD, Vinyl
+- User setting for changing now playing button row layout -> Classic, Central
