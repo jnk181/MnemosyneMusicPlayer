@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/npActionButtonsRow"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <android.widget.ImageButton
+        android:id="@+id/npBtnPlayPause"
+        android:layout_width="44dp"
+        android:layout_height="44dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Play or Pause Track"
+        android:scaleType="centerInside"
+        android:src="@drawable/button_play" />
+
+    <android.widget.ImageButton
+        android:id="@+id/npBtnStop"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="15dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Stop Playback"
+        android:scaleType="centerInside"
+        android:src="@drawable/playback_stop" />
+
+    <android.widget.ImageButton
+        android:id="@+id/npBtnPrev"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="8dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Previous Track"
+        android:scaleType="centerInside"
+        android:src="@drawable/playback_prev" />
+
+    <android.widget.ImageButton
+        android:id="@+id/npBtnNext"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="6dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Next Track"
+        android:scaleType="centerInside"
+        android:src="@drawable/playback_next" />
+
+    <Space
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <android.widget.ImageView
+        android:id="@+id/npIvVolumeStatus"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:contentDescription="Volume Indicator"
+        android:scaleType="fitCenter"
+        android:src="@drawable/sound"
+        android:visibility="gone" />
+
+    <android.widget.SeekBar
+        android:id="@+id/npVolumeSeekBar"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="12dp"
+        android:max="100"
+        android:progress="75"
+        android:progressDrawable="@color/black"
+        android:thumb="@color/white"
+        android:visibility="gone" />
+
+    <android.widget.ImageButton
+        android:id="@+id/npBtnMenuActionA"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="6dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Track Info Menu"
+        android:scaleType="fitCenter"
+        android:src="@drawable/text" />
+
+    <android.widget.ImageButton
+        android:id="@+id/npBtnMenuPlaylist"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="?android:attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Playlist File Manager"
+        android:scaleType="fitCenter"
+        android:src="@drawable/help" />
+
+</LinearLayout>

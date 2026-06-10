@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:width="24dp" android:height="24dp">
+                <bitmap
+                    android:src="@drawable/seekball"
+                    android:alpha="0.85"
+                    android:dither="true" />
+            </item>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item android:width="24dp" android:height="24dp">
+                <bitmap
+                    android:src="@drawable/seekball"
+                    android:dither="true" />
+            </item>
+        </layer-list>
+    </item>
+</selector>
