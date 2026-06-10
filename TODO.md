@@ -5,3 +5,4 @@
 - User setting for changing music scan directory (only one can be used)
 - User setting for changing Now Playing layouts -> Classic, CD, Vinyl
 - User setting for changing now playing button row layout -> Classic, Central
+- Fix the dates not being scanned and applied in the library. Some mp3 files use different tags for dates like `TDRC` instead of `YEAR`, which get overlooked.
