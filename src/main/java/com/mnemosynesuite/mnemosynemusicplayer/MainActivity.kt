@@ -67,6 +67,7 @@ class MainActivity : AppCompatActivity() {
     private var lastSeekBarProgress = 0
 
     private val selectedNowPlayingLayout = "disc" // classic, disc
+    val npButtonRowLayout = "classic" // getSharedPreferences("launcher_prefs", Context.MODE_PRIVATE).getString("now_playing_button_layout", "classic")
     private val hideNpDateLabel = true
 
     private val trackingHandler = Handler(Looper.getMainLooper())
@@ -82,8 +83,6 @@ class MainActivity : AppCompatActivity() {
     )
 
     enum class NavDestination { HOME, ARTISTS_LIST, ALBUMS_LIST, SONGS_LIST }
-
-    val npButtonRowLayout = "central" // getSharedPreferences("launcher_prefs", Context.MODE_PRIVATE).getString("now_playing_button_layout", "classic")
 
     val npButtonRowlayoutRes = when (npButtonRowLayout) {
         "central" -> R.layout.now_playing_buttons_central
@@ -683,7 +682,7 @@ class MainActivity : AppCompatActivity() {
                 layoutInflater.inflate(R.layout.now_playing_info_classic, emptyViewport, true)
             }
             "disc" -> {
-                layoutInflater.inflate(R.layout.now_playing_info_disc_vertical, emptyViewport, true)
+                layoutInflater.inflate(R.layout.now_playing_info_disc, emptyViewport, true)
             }
         }
 
